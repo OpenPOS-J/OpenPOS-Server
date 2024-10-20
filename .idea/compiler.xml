@@ -6,14 +6,44 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="expenditure" />
-        <module name="authentication_and_authorization" />
-        <module name="inventory_management" />
-        <module name="Utils" />
-        <module name="sales_operations" />
-        <module name="payments" />
-        <module name="reports_and_overcast" />
+        <module name="openpos-module-reports-and-overcast" />
+        <module name="openpos-module-expenditure-management" />
+        <module name="openpos-module-core" />
+        <module name="openpos-module-utils" />
+        <module name="openpos-module-authentication-authorization" />
+        <module name="openpos-module-inventory-management" />
+        <module name="openpos-module-sales-operations" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authentication_and_authorization" target="17" />
+      <module name="expenditure" target="17" />
+      <module name="expenditure_management" target="17" />
+      <module name="inventory_management" target="17" />
+      <module name="payments" target="17" />
+      <module name="reports_and_overcast" target="17" />
+      <module name="sales_operations" target="17" />
+      <module name="Utils" target="17" />
+      <module name="utils" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="OpenPOS" options="" />
+      <module name="authentication_and_authorization" options="-parameters" />
+      <module name="expenditure_management" options="-parameters" />
+      <module name="inventory_management" options="-parameters" />
+      <module name="openpos-module-authentication-authorization" options="-parameters" />
+      <module name="openpos-module-core" options="-parameters" />
+      <module name="openpos-module-expenditure-management" options="-parameters" />
+      <module name="openpos-module-inventory-management" options="-parameters" />
+      <module name="openpos-module-reports-and-overcast" options="-parameters" />
+      <module name="openpos-module-sales-operations" options="-parameters" />
+      <module name="openpos-module-utils" options="-parameters" />
+      <module name="payments" options="-parameters" />
+      <module name="reports_and_overcast" options="-parameters" />
+      <module name="sales_operations" options="-parameters" />
+      <module name="utils" options="-parameters" />
+    </option>
   </component>
 </project>
